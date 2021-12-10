@@ -1,0 +1,112 @@
+p {
+    width: 500px;
+}
+
+div div h3 {
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#frs__half__index {
+    background-color: #241f1f;
+    height: 350px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#snd__half__index {
+    background-color: #351616;
+    height: 390px;
+    border: 2px;
+    border-style: dashed;
+    border-color: #0a0606;
+}
+
+#index__txt__div {
+    float: left;
+    width: 50%;
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+#index__img {
+    width: 300px;
+    height: 200px;
+    border: 2px;
+    border-radius: 9px;
+    border-color: black;
+    border-style: dashed;
+    transform: rotate(-7deg);
+}
+
+#index__img__div {
+    padding-top: 60px;
+    padding-left: 75px;
+    float: left;
+    width: 50%;    
+}
+
+#div__h3 {
+    padding-left: 330px;
+    padding-top: 10px;
+}
+
+#index__sample__artic {
+    background-color: #423636;
+    width: 90%;
+    margin-left: 50px;
+    height: 290px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.index__font {
+    color: #1e751e;
+    width: 400px;
+}
+
+.card {
+    float: left;
+    width: 300px;
+    height: 90%;
+    margin-left: 17px;
+    margin-top: 12px;
+    transition:  0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card__img {
+    width: 295px;
+    height: 180px;
+    border-radius: 7px;
+    border-style: none;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.index__desk{
+    width: 100%;
+}
+
+.container {
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+.index__auth__creater {
+    position: relative;
+    bottom: 70px;
+    left: 240px;
+    width: 50px;
+    height: 50px;
+}
+
+.auth__img {
+    width: 50px;
+    height: 50px;
+}

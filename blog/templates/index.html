@@ -1,15 +1,70 @@
 {% extends "master.html" %}
+{% load static %}
 
 {% block page_title %}
-    Hello World!
+    Django Blog
 {% endblock page_title %}
 
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'style_files/css/index.css' %}">
+{% endblock custom_css %}
+
 {% block body %}
-    <ol>
-        <li>Hello</li>
-        <li>World</li>
-        <li>!</li>
-    </ol>
+   <div id="frs__half__index"> <!-- First half of page 'words and images' -->
+        <div id="index__txt__div">
+            <h2 class="index__font">
+                The Django Blog!
+            </h2>
+            <p class="index__font">
+                This blog is <i><strong style="color: #A00">UNOFFICIAL</strong></i> django blog, created as a portfolio for Abdelrahman Hussainy.
+            </p>
+        </div>
+        <div id="index__img__div">
+            <img id="index__img" src="{% static 'media/Ilovedjango.png' %}" alt="showblog">
+        </div>
+   </div>
+   <div id="snd__half__index"> <!-- Second half of page 'articals' -->
+        <div id="div__h3">
+            <h3>Sample of Our Articals!</h3>
+        </div>
+        <div id="index__sample__artic"> <!-- Many changes will be here -->
+            <div class="card">
+                <img class="card__img" src="{% static 'media/Ilovedjango.png' %}" alt="article"> 
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p class="index__desk">Architect & Engineer</p>
+                </div>
+                <div class="index__auth__creater">
+                    <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
+                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">Hell123</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="{% static 'media/Ilovedjango.png' %}" alt="article">
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p class="index__desk">Architect & Engineer</p>
+                </div>
+                <div class="index__auth__creater">
+                    <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
+                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">Hell123</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="{% static 'media/Ilovedjango.png' %}" alt="article">
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p class="index__desk">Architect & Engineer</p>
+                </div>
+                <div class="index__auth__creater">
+                    <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
+                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">Hell123</p>
+                </div>
+              </div>
+        </div>
+   </div>
 {% endblock body %}
 
 

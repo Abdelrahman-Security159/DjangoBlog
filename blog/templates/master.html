@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>{% block page_title %}{% endblock page_title %}</title>
     <link rel="stylesheet" href="{% static 'style_files/css/bootstrap.css' %}">
+    {% block custom_css %}{% endblock custom_css %}
 </head>
 <body>
     <!-- Start Navbar -->
@@ -58,7 +59,7 @@
     {% block body %}
     
     {% endblock body %}
-    <script type="text/javascript" src="style_files/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="style_files/js/jQuiry.js"></script>
+    <script type="text/javascript" src="{% static 'style_files/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'style_files/js/jQuiry.js' %}"></script>
 </body>
 </html>
