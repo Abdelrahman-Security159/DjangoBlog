@@ -1,0 +1,42 @@
+body {
+    background-color: #302929;
+}
+
+#head__title {
+    margin-left: 300px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+#post__title {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#edit__by {
+    font-size: x-small;
+    color: azure;
+}
+
+#auther {
+    font-style: normal;
+    color: aquamarine;
+}
+
+#body__post {
+    width: 60%;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: #2c2323;
+}
+
+#img__src {
+    height: 393px;
+    width: 630px;
+}
+
+#post__body {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(167, 129, 129);
+}

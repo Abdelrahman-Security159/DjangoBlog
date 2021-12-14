@@ -1,0 +1,24 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block page_title %}
+    Django Blog
+{% endblock page_title %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'style_files/css/explore.css' %}">
+{% endblock custom_css %}
+
+{% block body %}
+    <div id="stack__post">
+        <div id="post">
+            <div id="img__post">
+                <img id="img" src="{% static 'media/AzoraICON.png' %}" alt="post_img">
+            </div>
+            <div id="det__post">
+                <h3>Threads in Python</h3>
+                <p>Load jg pwi mogei mihf lkjh</p>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
