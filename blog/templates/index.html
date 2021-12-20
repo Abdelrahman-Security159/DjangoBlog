@@ -31,36 +31,36 @@
             <div class="card">
                 <img class="card__img" src="{% static 'media/Ilovedjango.png' %}" alt="article"> 
                 <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p class="index__desk">Architect & Engineer</p>
+                  <h4><b><a href="{% url 'posts' second.id %}">{{first.title}}</a></b></h4>
+                  <p class="index__desk">{{first.desc|truncatechars:20}}</p>
                 </div>
                 <div class="index__auth__creater">
                     <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
-                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">Hell123</p>
+                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">{{first.auther}}</p>
                 </div>
               </div>
 
               <div class="card">
                 <img class="card__img" src="{% static 'media/Ilovedjango.png' %}" alt="article">
                 <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p class="index__desk">Architect & Engineer</p>
+                  <h4><b><a href="{% url 'posts' second.id %}">{{second.title}}</a></b></h4>
+                  <p class="index__desk">{{second.desc|truncatechars:20}}</p>
                 </div>
                 <div class="index__auth__creater">
                     <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
-                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">Hell123</p>
+                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">{{second.auther}}</p>
                 </div>
               </div>
 
               <div class="card">
                 <img class="card__img" src="{% static 'media/Ilovedjango.png' %}" alt="article">
                 <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p class="index__desk">Architect & Engineer</p>
+                  <h4><b><a href="{% url 'posts' second.id %}">{{third.title}}</a></b></h4>
+                  <p class="index__desk">{{third.desc|truncatechars:20}}</p>
                 </div>
                 <div class="index__auth__creater">
                     <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
-                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">Hell123</p>
+                    <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">{{third.auther}}</p>
                 </div>
               </div>
         </div>

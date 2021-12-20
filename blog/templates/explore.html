@@ -10,15 +10,20 @@
 {% endblock custom_css %}
 
 {% block body %}
+    <h2 id="count__posts">The count of all posts are : {{count}}</h2>
     <div id="stack__post">
-        <div id="post">
-            <div id="img__post">
-                <img id="img" src="{% static 'media/AzoraICON.png' %}" alt="post_img">
+
+        {% for post in posts %}             <!-- For loop in Jinja -->
+            <div id="post">
+                <div id="img__post">
+                    <img id="img" src="{% static 'media/AzoraICON.png' %}" alt="post_img">
+                </div>
+                <div id="det__post">
+                    <h3><a href="{% url 'posts' post.id %}">{{ post.title }}</a></h3>
+                    <p>{{ post.desc }}</p>
+                </div>
             </div>
-            <div id="det__post">
-                <h3>Threads in Python</h3>
-                <p>Load jg pwi mogei mihf lkjh</p>
-            </div>
-        </div>
+        {% endfor %}
+        
     </div>
 {% endblock body %}
