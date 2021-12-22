@@ -1,0 +1,51 @@
+body {
+    background-color: #241f1f;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input[type="submit"]{
+    margin-left: 250px;
+    margin-bottom: 15px;
+
+}
+
+input[type="radio"] {
+    margin-left: 30px;
+}
+
+#reg__form {
+    width: 600px;
+    height: auto;
+    background-color: #606060;
+    border: 1px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: dashed;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+#input__table {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+#sub__table {
+    margin-left: 180px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#first, #user, #eml, #pwd {
+    margin-top: 10px;
+}
+
+.form-control:focus {
+    border-color: #242323;
+    box-shadow: 0 0 0 0.2rem rgba(20, 22, 21, 0.25);
+}

@@ -1,0 +1,37 @@
+body {
+    background-color: #241f1f;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input[type="submit"]{
+    margin-left: 280px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+#user, #pwd {
+    margin-top: 10px;
+}
+
+#log__form {
+    width: 700px;
+    height: auto;
+    background-color: #606060;
+    border: 1px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: groove;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+#input__table {
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,36 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block page_title %}
+    Author
+{% endblock page_title %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'style_files/css/login.css' %}">
+{% endblock custom_css %}
+
+{% block body %}
+   
+    <div id="log__form">
+        <form action="" method="post">
+            <div id="input__table">
+                <table>
+                    <tr>
+                    <tr>
+                        <td><label for="eml">Username or E-mail</label></td>
+                        <td><input type="text" class="form-control" id="eml" size="56" name="email" placeholder="Username | Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="first">Password</label></td>
+                        <td><input type="password" class="form-control" id="pwd" name="password" size="25" placeholder="password"></td>
+                    </tr>
+                </table>
+                <input type="submit" class="btn btn-dark" value="Login">
+            </div>
+        </form>
+    </div>
+
+{% endblock body %}
+
+
+
