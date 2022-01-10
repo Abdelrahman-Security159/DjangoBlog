@@ -6,13 +6,14 @@
 {% endblock page_title %}
 
 {% block custom_css %}
-    <link rel="stylesheet" href="{% static 'style_files/css/reg.css' %}">
+    <link rel="stylesheet" href="{% static 'style_files/css/register.css' %}">
 {% endblock custom_css %}
 
 {% block body %}
    
     <div id="reg__form">
         <form action="" method="post">
+            {% csrf_token %}
             <div id="input__table">
                 <table>
                     <tr>
@@ -21,13 +22,13 @@
                         <td><input type="text" class="form-control" id="first" name="lastname" size="25" placeholder="Last Name"></td>
                     </tr>
                     <tr>
-                        <td><label for="user">Name</label></td>
+                        <td><label for="user">Username</label></td>
                         <td colspan="2">
                             <input type="text" class="form-control" id="user" name="username" size="56" placeholder="Username">
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="eml">E-mail</label></td>
+                        <td><label for="eml">Email</label></td>
                         <td colspan="2"><input type="email" class="form-control" id="eml" size="56" name="email" placeholder="Email"></td>
                     </tr>
                     <tr>

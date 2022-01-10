@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_title %}
-    Author
+    Login
 {% endblock page_title %}
 
 {% block custom_css %}
@@ -10,27 +10,24 @@
 {% endblock custom_css %}
 
 {% block body %}
-   
-    <div id="log__form">
+
+    <div id="login__form">
         <form action="" method="post">
-            <div id="input__table">
-                <table>
-                    <tr>
-                    <tr>
-                        <td><label for="eml">Username or E-mail</label></td>
-                        <td><input type="text" class="form-control" id="eml" size="56" name="email" placeholder="Username | Email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="first">Password</label></td>
-                        <td><input type="password" class="form-control" id="pwd" name="password" size="25" placeholder="password"></td>
-                    </tr>
-                </table>
-                <input type="submit" class="btn btn-dark" value="Login">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="log__input">Email or Username</label>
+                <input type="email" class="form-control">
             </div>
+            <div class="mb-3">
+                <label class="log__input">Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox">
+                <label class="log__input">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-success submit__log">Submit</button>
         </form>
     </div>
 
 {% endblock body %}
-
-
-

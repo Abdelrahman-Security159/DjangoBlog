@@ -6,6 +6,15 @@ label{
     margin-right: 10px;
 }
 
+a {
+    color: #6610f2;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #6610f2;
+}
+
 input[type="submit"]{
     margin-left: 250px;
     margin-bottom: 15px;
@@ -20,7 +29,7 @@ input[type="radio"] {
     width: 600px;
     height: auto;
     background-color: #606060;
-    border: 1px;
+    border: 2px;
     border-radius: 5px;
     border-color: black;
     border-style: dashed;
