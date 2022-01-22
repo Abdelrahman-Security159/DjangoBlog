@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import TestForm
+from .forms import LoginForm, RegForm
 
 
 def register(request):
@@ -7,21 +7,21 @@ def register(request):
 
 def login(request):
     if request.method == "POST":
-        form = TestForm(request.POST)
+        form = LoginForm(request.POST)
         
         if form.is_valid():
             return render(request, "done.html")
     else:
-        form = TestForm()
+        form = LoginForm()
     return render(request, "login.html", {"form":form})
 
-def test(request):
+def register(request):
     if request.method == "POST":
-        form = TestForm(request.POST)
+        form = RegForm(request.POST)
         
         if form.is_valid():
             print(form.cleaned_data)
             return render(request, "done.html")
     else:
-        form = TestForm()
-    return render(request, "test.html", {"form":form})
+        form = RegForm()
+    return render(request, "register.html", {"form":form})

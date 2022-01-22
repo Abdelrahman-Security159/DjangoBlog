@@ -18,11 +18,7 @@ a:hover{
 input[type="submit"]{
     margin-left: 250px;
     margin-bottom: 15px;
-
-}
-
-input[type="radio"] {
-    margin-left: 30px;
+    margin-top: 20px;
 }
 
 #reg__form {
@@ -54,7 +50,16 @@ input[type="radio"] {
     margin-top: 10px;
 }
 
+.form-control{
+    margin: 3px 0px 3px 0px;
+}
+
 .form-control:focus {
     border-color: #242323;
     box-shadow: 0 0 0 0.2rem rgba(20, 22, 21, 0.25);
+}
+
+.long__input {
+    border-radius: 10px;
+    size: 100px;
 }
