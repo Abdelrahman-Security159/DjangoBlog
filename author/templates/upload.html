@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'style_files/css/upload.css' %}">
+        <title>Upload</title>
+    </head>
+
+    <body>
+        <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div id="upload__div">
+                <img id="avatar">
+                <div id="label__div">
+                    <label>Upload your avatar</label>
+                </div>
+                <input type="file" id="input__file" name="avatar"><br>
+                <small style="color: red; font-family: 'Courier New', Courier, monospace; margin-left: 20px;">Note: upload square image recommanded.</small>
+                <div id="submit">
+                    <input type="submit" value="Upload!">
+                </div>
+            </div>
+            
+        </form>
+        <script type="text/javascript" src="{% static 'style_files/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'style_files/js/jQuiry.js' %}"></script>
+        <script>
+            $('#input__file').change(function() {
+            var url = window.URL.createObjectURL(this.files[0]);
+            $('#avatar').attr('src',url);
+            });
+        </script>
+    </body>
+
+</html>

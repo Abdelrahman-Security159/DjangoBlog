@@ -35,7 +35,7 @@
                   <p class="index__desk">{{first.desc|truncatechars:20}}</p>
                 </div>
                 <div class="index__auth__creater">
-                    <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
+                    <img class="auth__img" src="{{first.author.avatar.url}}" alt="auth img">
                     <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">{{first.author.user_name}}</p>
                 </div>
               </div>
@@ -47,7 +47,7 @@
                   <p class="index__desk">{{second.desc|truncatechars:20}}</p>
                 </div>
                 <div class="index__auth__creater">
-                    <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
+                    <img class="auth__img" src="{{second.author.avatar.url}}" alt="auth img">
                     <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">{{second.author.user_name}}</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@
                   <p class="index__desk">{{third.desc|truncatechars:20}}</p>
                 </div>
                 <div class="index__auth__creater">
-                    <img class="auth__img" src="{% static 'media/AzoraICON.png' %}" alt="auth img">
+                    <img class="auth__img" src="{{third.author.avatar.url}}" alt="auth img">
                     <p style="width: 75px; font-size: small; font-family: 'Courier New', Courier, monospace;">{{third.author.user_name}}</p>
                 </div>
               </div>

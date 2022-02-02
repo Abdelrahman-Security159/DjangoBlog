@@ -1,0 +1,59 @@
+body {
+    background-color: #241f1f;
+}
+
+label{
+    margin-right: 10px;
+}
+
+#label__div{
+    margin: 10px 0px 15px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#upload__div{
+    width: 800px;
+    height: 150px;
+    background-color: rgb(100, 99, 99);
+    border-radius: 7px;
+    border: 1px;
+    border-style: groove;
+    border-color: black;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+#submit{
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+#input__file{
+    margin-left: 20px;
+}
+
+#avatar{
+    position: absolute;
+    left: 800px;
+    top: 65px;
+    width: 100px;
+    height: 100px;
+    border: 1px groove black;
+    border-radius: 3px;
+    background-color: rgb(51, 51, 51);
+}
+
+input[type=file]::file-selector-button {
+    border: 1px solid #000000;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+input[type=submit]{
+    border: 1px groove green;
+    border-radius: 4px;
+    width: 60px;
+    height: 30px;
+  }

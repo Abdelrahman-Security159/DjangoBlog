@@ -12,7 +12,7 @@
 {% block body %}
    
     <div id="reg__form">
-        <form action="" method="post">
+        <form action="{% url 'register' %}" method="post">
             {% csrf_token %}
             <div id="input__table">
                 <table>
